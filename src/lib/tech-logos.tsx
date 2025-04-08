@@ -1,7 +1,6 @@
 import type { IconType } from "react-icons";
 import {
     SiApachekafka,
-    // SiCplusplus,
     SiDocker,
     SiExpress,
     SiGraphql,
@@ -21,23 +20,17 @@ import {
     SiTrpc,
     SiTypescript,
     SiFigma,
-    // SiVercel,
     SiFirebase,
     SiMysql,
     SiBootstrap,
-    // SiGithub,
     SiHtml5,
     SiCss3,
-    // SiGit,
     SiGooglecolab,
-    // SiRadixui,
-    // SiClerk,
-    // SiStreamlit,
     SiSocketdotio,
 } from "react-icons/si";
 
 import { DiPython } from "react-icons/di";
-import { FaGitAlt,FaVideo } from "react-icons/fa";
+import { FaGitAlt, FaVideo, FaUserShield, FaShapes } from "react-icons/fa";
 
 // Updated techLogos based on your main skills
 export const techLogos: Record<string, IconType> = {
@@ -62,7 +55,7 @@ export const techLogos: Record<string, IconType> = {
   "Node.js": SiNodedotjs,
   "Tailwind CSS": SiTailwindcss,
   Bootstrap: SiBootstrap,
-  // "Radix UI": SiRadixui,
+  "Radix UI": FaShapes,
 
   // Databases & Backend
   PostgreSQL: SiPostgresql,
@@ -73,15 +66,15 @@ export const techLogos: Record<string, IconType> = {
   "Express.js": SiExpress,
 
   // Other Technologies
-  // Clerk: SiClerk,
   "tRPC": SiTrpc,
   "React Query": SiReactquery,
   "Redux Toolkit": SiRedux,
   Docker: SiDocker,
   Kafka: SiApachekafka,
   Rust: SiRust,
+  Clerk: FaUserShield,
 
   // Real-time & Streaming
-  "Stream.io": FaVideo, 
+  "ZEGOCLOUD": FaVideo, 
   "Socket.io": SiSocketdotio,
 };
