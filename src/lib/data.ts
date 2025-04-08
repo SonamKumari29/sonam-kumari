@@ -49,7 +49,6 @@ export const skills = [
   { name: 'Google Colab', category: 'Tools & Technologies' },
   { name: 'MySQL', category: 'Tools & Technologies' },
   { name: 'Firebase', category: 'Tools & Technologies' },
-  { name: 'Clerk', category: 'Tools & Technologies' },  // ✅ Moved Clerk here
 
   // Libraries & Frameworks
   { name: 'React.js', category: 'Libraries & Frameworks' },
@@ -57,7 +56,6 @@ export const skills = [
   { name: 'Node.js', category: 'Libraries & Frameworks' },
   { name: 'Tailwind CSS', category: 'Libraries & Frameworks' },
   { name: 'Bootstrap', category: 'Libraries & Frameworks' },
-  { name: 'Radix UI', category: 'Libraries & Frameworks' },
 
 
   // Real-time & Streaming
