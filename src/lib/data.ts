@@ -62,7 +62,8 @@ export const skills = [
 
   // Real-time & Streaming
   { name: 'Socket.io', category: 'Real-time & Streaming' },
-  { name: 'Stream.io', category: 'Real-time & Streaming' },
+  { name: 'ZEGOCLOUD', category: 'Real-time & Streaming' },
+
 
 
 ];
