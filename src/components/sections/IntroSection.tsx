@@ -41,24 +41,20 @@ export default function IntroSection({ setActiveSection, theme = "sunset" }: Int
                         'Hey!',
                         1000,
                         'Hey! I\'m Sonam Kumari',
-                        2000,
                       ]}
                       wrapper="span"
                       speed={50}
-                      repeat={Infinity}
+                      repeat={0}
                     />
                   </div>
                 ) : (
                   <TypeAnimation
                     sequence={[
-                      'Hey!',
-                      1000,
                       'Hey! I\'m Sonam Kumari',
-                      2000,
                     ]}
                     wrapper="span"
-                    speed={5}
-                    repeat={Infinity}
+                    speed={1}
+                    repeat={0}
                     className="bg-gradient-to-r from-orange-400 via-pink-500 to-purple-500 bg-clip-text text-transparent pb-3"
                   />
                 )}
