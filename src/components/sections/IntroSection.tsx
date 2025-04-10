@@ -57,7 +57,7 @@ export default function IntroSection({ setActiveSection, theme = "sunset" }: Int
                       2000,
                     ]}
                     wrapper="span"
-                    speed={50}
+                    speed={5}
                     repeat={Infinity}
                     className="bg-gradient-to-r from-orange-400 via-pink-500 to-purple-500 bg-clip-text text-transparent pb-3"
                   />
