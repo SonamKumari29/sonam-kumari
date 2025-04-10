@@ -65,25 +65,67 @@ export default function IntroSection({ setActiveSection, theme = "sunset" }: Int
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.6 }}
-              className="space-y-4 text-gray-300"
+              className="space-y-6"
             >
-              <div className="flex items-start space-x-3">
-                <Sparkles className={`w-6 h-6 mt-1 flex-shrink-0 ${theme === "retro" ? "text-green-400" : "text-orange-400"}`} />
-                <p className="text-lg">
+              <div className={`flex items-start space-x-3 p-4 rounded-xl ${
+                theme === "retro"
+                  ? "bg-green-400/5 border border-green-400/10"
+                  : "bg-gradient-to-r from-orange-400/5 to-pink-500/5 border border-orange-400/10"
+              }`}>
+                <div className={`p-2 rounded-lg ${
+                  theme === "retro"
+                    ? "bg-green-400/10"
+                    : "bg-orange-400/10"
+                }`}>
+                  <Sparkles className={`w-5 h-5 ${theme === "retro" ? "text-green-400" : "text-orange-400"}`} />
+                </div>
+                <p className={`text-lg ${
+                  theme === "retro"
+                    ? "text-green-100"
+                    : "text-orange-100"
+                }`}>
                   I&apos;m a passionate developer who loves turning ideas into intuitive and impactful digital experiences.
                 </p>
               </div>
 
-              <div className="flex items-start space-x-3">
-                <Code className={`w-6 h-6 mt-1 flex-shrink-0 ${theme === "retro" ? "text-green-400" : "text-orange-400"}`} />
-                <p className="text-lg">
+              <div className={`flex items-start space-x-3 p-4 rounded-xl ${
+                theme === "retro"
+                  ? "bg-green-400/5 border border-green-400/10"
+                  : "bg-gradient-to-r from-pink-500/5 to-purple-500/5 border border-pink-500/10"
+              }`}>
+                <div className={`p-2 rounded-lg ${
+                  theme === "retro"
+                    ? "bg-green-400/10"
+                    : "bg-pink-500/10"
+                }`}>
+                  <Code className={`w-5 h-5 ${theme === "retro" ? "text-green-400" : "text-pink-500"}`} />
+                </div>
+                <p className={`text-lg ${
+                  theme === "retro"
+                    ? "text-green-100"
+                    : "text-pink-100"
+                }`}>
                   With a keen eye for design and a problem-solving mindset, I craft seamless, user-friendly interfaces.
                 </p>
               </div>
 
-              <div className="flex items-start space-x-3">
-                <Coffee className={`w-6 h-6 mt-1 flex-shrink-0 ${theme === "retro" ? "text-green-400" : "text-orange-400"}`} />
-                <p className="text-lg">
+              <div className={`flex items-start space-x-3 p-4 rounded-xl ${
+                theme === "retro"
+                  ? "bg-green-400/5 border border-green-400/10"
+                  : "bg-gradient-to-r from-purple-500/5 to-orange-400/5 border border-purple-500/10"
+              }`}>
+                <div className={`p-2 rounded-lg ${
+                  theme === "retro"
+                    ? "bg-green-400/10"
+                    : "bg-purple-500/10"
+                }`}>
+                  <Coffee className={`w-5 h-5 ${theme === "retro" ? "text-green-400" : "text-purple-500"}`} />
+                </div>
+                <p className={`text-lg ${
+                  theme === "retro"
+                    ? "text-green-100"
+                    : "text-purple-100"
+                }`}>
                   Beyond coding, I enjoy exploring new technologies and collaborating on meaningful projects.
                 </p>
               </div>
