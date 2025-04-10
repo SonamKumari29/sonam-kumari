@@ -1,6 +1,6 @@
 "use client"
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
 import CLI from './CLI'
 import IntroSection from './sections/IntroSection'
@@ -10,11 +10,22 @@ import ExperienceSection from './sections/ExperienceSection'
 import EducationSection from './sections/EducationSection'
 import ContactSection from './sections/ContactSection'
 import Navigation, { Section } from './Navigation'
+import CursorFollower from './CursorFollower'
 
 export default function Portfolio() {
   const [activeSection, setActiveSection] = useState<Section>('intro')
   const [theme, setTheme] = useState<'retro' | 'sunset'>('sunset')
   const [cliMode, setCliMode] = useState(false)
+  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 })
+
+  useEffect(() => {
+    const handleMouseMove = (e: MouseEvent) => {
+      setMousePosition({ x: e.clientX, y: e.clientY })
+    }
+
+    window.addEventListener('mousemove', handleMouseMove)
+    return () => window.removeEventListener('mousemove', handleMouseMove)
+  }, [])
 
   return (
     <div
@@ -24,6 +35,7 @@ export default function Portfolio() {
           : 'bg-gradient-to-br from-gray-900 via-purple-900 to-orange-900 font-sans'
       } text-gray-100`}
     >
+      <CursorFollower mousePosition={mousePosition} theme={theme} />
       <Navigation
         activeSection={activeSection}
         setActiveSection={setActiveSection}
