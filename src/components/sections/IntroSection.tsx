@@ -17,21 +17,21 @@ interface IntroProps {
 export default function IntroSection({ setActiveSection, theme = "sunset" }: IntroProps) {
   return (
     <section className="min-h-screen relative flex items-center">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-32">
-        <div className="flex flex-col lg:flex-row justify-between items-center gap-12">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-20">
+        <div className="flex flex-col lg:flex-row justify-between items-center gap-8">
           <motion.div 
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}
-            className="flex-1 space-y-8"
+            className="flex-1 space-y-6"
           >
             {/* Name and Title */}
-            <div className="space-y-4">
+            <div className="space-y-3">
               <motion.h1 
                 initial={{ opacity: 0, y: -20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.2 }}
-                className="text-5xl md:text-6xl font-bold"
+                className="text-4xl sm:text-5xl md:text-6xl font-bold"
               >
                 <span className={theme === "retro" ? "text-green-400" : "text-orange-400"}>Hey! </span>
                 <span className={theme === "retro" 
@@ -47,7 +47,7 @@ export default function IntroSection({ setActiveSection, theme = "sunset" }: Int
                 initial={{ opacity: 0, scale: 0.9 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.5, delay: 0.4 }}
-                className={`inline-flex items-center px-4 py-2 rounded-full ${
+                className={`inline-flex items-center px-3 py-1.5 rounded-full ${
                   theme === "retro"
                     ? "bg-green-400/10 border border-green-400/20"
                     : "bg-orange-400/10 border border-orange-400/20"
@@ -65,9 +65,9 @@ export default function IntroSection({ setActiveSection, theme = "sunset" }: Int
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.6 }}
-              className="space-y-6"
+              className="space-y-3"
             >
-              <div className={`flex items-start space-x-3 p-4 rounded-xl ${
+              <div className={`flex items-start space-x-3 p-3 rounded-xl backdrop-blur-sm ${
                 theme === "retro"
                   ? "bg-green-400/5 border border-green-400/10"
                   : "bg-gradient-to-r from-orange-400/5 to-pink-500/5 border border-orange-400/10"
@@ -77,9 +77,9 @@ export default function IntroSection({ setActiveSection, theme = "sunset" }: Int
                     ? "bg-green-400/10"
                     : "bg-orange-400/10"
                 }`}>
-                  <Sparkles className={`w-5 h-5 ${theme === "retro" ? "text-green-400" : "text-orange-400"}`} />
+                  <Sparkles className={`w-4 h-4 ${theme === "retro" ? "text-green-400" : "text-orange-400"}`} />
                 </div>
-                <p className={`text-lg ${
+                <p className={`text-sm sm:text-base ${
                   theme === "retro"
                     ? "text-green-100"
                     : "text-orange-100"
@@ -88,7 +88,7 @@ export default function IntroSection({ setActiveSection, theme = "sunset" }: Int
                 </p>
               </div>
 
-              <div className={`flex items-start space-x-3 p-4 rounded-xl ${
+              <div className={`flex items-start space-x-3 p-3 rounded-xl backdrop-blur-sm ${
                 theme === "retro"
                   ? "bg-green-400/5 border border-green-400/10"
                   : "bg-gradient-to-r from-pink-500/5 to-purple-500/5 border border-pink-500/10"
@@ -98,9 +98,9 @@ export default function IntroSection({ setActiveSection, theme = "sunset" }: Int
                     ? "bg-green-400/10"
                     : "bg-pink-500/10"
                 }`}>
-                  <Code className={`w-5 h-5 ${theme === "retro" ? "text-green-400" : "text-pink-500"}`} />
+                  <Code className={`w-4 h-4 ${theme === "retro" ? "text-green-400" : "text-pink-500"}`} />
                 </div>
-                <p className={`text-lg ${
+                <p className={`text-sm sm:text-base ${
                   theme === "retro"
                     ? "text-green-100"
                     : "text-pink-100"
@@ -109,7 +109,7 @@ export default function IntroSection({ setActiveSection, theme = "sunset" }: Int
                 </p>
               </div>
 
-              <div className={`flex items-start space-x-3 p-4 rounded-xl ${
+              <div className={`flex items-start space-x-3 p-3 rounded-xl backdrop-blur-sm ${
                 theme === "retro"
                   ? "bg-green-400/5 border border-green-400/10"
                   : "bg-gradient-to-r from-purple-500/5 to-orange-400/5 border border-purple-500/10"
@@ -119,9 +119,9 @@ export default function IntroSection({ setActiveSection, theme = "sunset" }: Int
                     ? "bg-green-400/10"
                     : "bg-purple-500/10"
                 }`}>
-                  <Coffee className={`w-5 h-5 ${theme === "retro" ? "text-green-400" : "text-purple-500"}`} />
+                  <Coffee className={`w-4 h-4 ${theme === "retro" ? "text-green-400" : "text-purple-500"}`} />
                 </div>
-                <p className={`text-lg ${
+                <p className={`text-sm sm:text-base ${
                   theme === "retro"
                     ? "text-green-100"
                     : "text-purple-100"
@@ -136,40 +136,40 @@ export default function IntroSection({ setActiveSection, theme = "sunset" }: Int
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.8 }}
-              className="flex items-center gap-6"
+              className="flex items-center gap-3 sm:gap-4"
             >
               <Link 
                 href="https://x.com/that_textrovert" 
                 target="_blank"
-                className={`p-3 rounded-full transition-all duration-300 hover:scale-110 ${
+                className={`p-2.5 rounded-full transition-all duration-300 hover:scale-110 ${
                   theme === "retro"
                     ? "bg-green-400/10 hover:bg-green-400/20 border border-green-400/20 hover:border-green-400/40 text-green-400 shadow-lg shadow-green-400/10 hover:shadow-green-400/20"
                     : "bg-gradient-to-r from-orange-400/10 to-pink-500/10 hover:from-orange-400/20 hover:to-pink-500/20 border border-orange-400/20 hover:border-orange-400/40 text-orange-400 shadow-lg shadow-orange-400/10 hover:shadow-orange-400/20"
                 }`}
               >
-                <FaXTwitter size={20} />
+                <FaXTwitter size={16} />
               </Link>
               <Link 
                 href="https://www.linkedin.com/in/sonam-kumari-084641257/" 
                 target="_blank"
-                className={`p-3 rounded-full transition-all duration-300 hover:scale-110 ${
+                className={`p-2.5 rounded-full transition-all duration-300 hover:scale-110 ${
                   theme === "retro"
                     ? "bg-green-400/10 hover:bg-green-400/20 border border-green-400/20 hover:border-green-400/40 text-green-400 shadow-lg shadow-green-400/10 hover:shadow-green-400/20"
                     : "bg-gradient-to-r from-pink-500/10 to-purple-500/10 hover:from-pink-500/20 hover:to-purple-500/20 border border-pink-500/20 hover:border-pink-500/40 text-pink-500 shadow-lg shadow-pink-500/10 hover:shadow-pink-500/20"
                 }`}
               >
-                <FaLinkedin size={20} />
+                <FaLinkedin size={16} />
               </Link>
               <Link 
                 href="https://github.com/SonamKumari29" 
                 target="_blank"
-                className={`p-3 rounded-full transition-all duration-300 hover:scale-110 ${
+                className={`p-2.5 rounded-full transition-all duration-300 hover:scale-110 ${
                   theme === "retro"
                     ? "bg-green-400/10 hover:bg-green-400/20 border border-green-400/20 hover:border-green-400/40 text-green-400 shadow-lg shadow-green-400/10 hover:shadow-green-400/20"
                     : "bg-gradient-to-r from-purple-500/10 to-orange-400/10 hover:from-purple-500/20 hover:to-orange-400/20 border border-purple-500/20 hover:border-purple-500/40 text-purple-500 shadow-lg shadow-purple-500/10 hover:shadow-purple-500/20"
                 }`}
               >
-                <FaGithub size={20} />
+                <FaGithub size={16} />
               </Link>
             </motion.div>
 
@@ -181,7 +181,7 @@ export default function IntroSection({ setActiveSection, theme = "sunset" }: Int
               className="block lg:hidden flex justify-center"
             >
               <Button 
-                className={`w-full max-w-[250px] py-3 rounded-full transition-all duration-500 group relative overflow-hidden ${
+                className={`w-full max-w-[200px] py-2 rounded-full transition-all duration-500 group relative overflow-hidden ${
                   theme === "retro"
                     ? "bg-transparent text-green-400 border-2 border-green-400 hover:text-black font-mono text-sm"
                     : "bg-transparent text-orange-400 border-2 border-orange-400 hover:text-white font-sans"
@@ -194,7 +194,7 @@ export default function IntroSection({ setActiveSection, theme = "sunset" }: Int
                     : "bg-gradient-to-r from-orange-400 via-pink-500 to-purple-500"
                 }`} />
                 <span className="relative flex items-center justify-center">
-                  <Briefcase className="mr-2 h-4 w-4" />
+                  <Briefcase className="mr-2 h-3 w-3" />
                   Hire Me
                 </span>
               </Button>
@@ -206,9 +206,9 @@ export default function IntroSection({ setActiveSection, theme = "sunset" }: Int
             initial={{ opacity: 0, x: 20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5, delay: 0.4 }}
-            className="relative hidden lg:flex flex-col items-center gap-6"
+            className="relative hidden lg:flex flex-col items-center gap-4"
           >
-            <div className={`w-[300px] h-[300px] rounded-3xl overflow-hidden ${
+            <div className={`w-[240px] h-[240px] rounded-3xl overflow-hidden ${
               theme === 'retro' 
                 ? 'border-4 border-green-400 shadow-lg shadow-green-400/20' 
                 : 'border-2 border-orange-400'
@@ -216,8 +216,8 @@ export default function IntroSection({ setActiveSection, theme = "sunset" }: Int
               <Image
                 src="/profile.jpg"
                 alt="Sonam Kumari"
-                width={300}
-                height={300}
+                width={240}
+                height={240}
                 className="object-cover"
                 priority
               />
@@ -225,7 +225,7 @@ export default function IntroSection({ setActiveSection, theme = "sunset" }: Int
             
             {/* Desktop Hire Me Button */}
             <Button 
-              className={`w-full max-w-[250px] py-3 lg:py-4 rounded-full transition-all duration-500 group relative overflow-hidden ${
+              className={`w-full max-w-[200px] py-2 rounded-full transition-all duration-500 group relative overflow-hidden ${
                 theme === "retro"
                   ? "bg-transparent text-green-400 border-2 border-green-400 hover:text-black font-mono text-sm"
                   : "bg-transparent text-orange-400 border-2 border-orange-400 hover:text-white font-sans"
@@ -238,7 +238,7 @@ export default function IntroSection({ setActiveSection, theme = "sunset" }: Int
                   : "bg-gradient-to-r from-orange-400 via-pink-500 to-purple-500"
               }`} />
               <span className="relative flex items-center justify-center">
-                <Briefcase className="mr-2 h-4 w-4" />
+                <Briefcase className="mr-2 h-3 w-3" />
                 Hire Me
               </span>
             </Button>
