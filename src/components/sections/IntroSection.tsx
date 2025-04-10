@@ -8,6 +8,7 @@ import Link from "next/link"
 import { FaGithub, FaLinkedin, FaXTwitter } from "react-icons/fa6"
 import { type Section } from "@/lib/types"
 import { type Dispatch, type SetStateAction } from "react"
+import { TypeAnimation } from 'react-type-animation'
 
 interface IntroProps {
   setActiveSection: Dispatch<SetStateAction<Section>>
@@ -33,13 +34,34 @@ export default function IntroSection({ setActiveSection, theme = "sunset" }: Int
                 transition={{ duration: 0.5, delay: 0.2 }}
                 className="text-4xl sm:text-5xl md:text-6xl font-bold"
               >
-                <span className={theme === "retro" ? "text-green-400" : "text-orange-400"}>Hey! </span>
-                <span className={theme === "retro" 
-                  ? "text-green-400"
-                  : "bg-gradient-to-r from-orange-400 via-pink-500 to-purple-500 bg-clip-text text-transparent"
-                }>
-                  I&apos;m Sonam Kumari
-                </span>
+                {theme === "retro" ? (
+                  <div className="text-green-400">
+                    <TypeAnimation
+                      sequence={[
+                        'Hey!',
+                        1000,
+                        'Hey! I\'m Sonam Kumari',
+                        2000,
+                      ]}
+                      wrapper="span"
+                      speed={50}
+                      repeat={Infinity}
+                    />
+                  </div>
+                ) : (
+                  <TypeAnimation
+                    sequence={[
+                      'Hey!',
+                      1000,
+                      'Hey! I\'m Sonam Kumari',
+                      2000,
+                    ]}
+                    wrapper="span"
+                    speed={50}
+                    repeat={Infinity}
+                    className="bg-gradient-to-r from-orange-400 via-pink-500 to-purple-500 bg-clip-text text-transparent pb-3"
+                  />
+                )}
               </motion.h1>
               
               {/* Frontend Developer Tag */}
