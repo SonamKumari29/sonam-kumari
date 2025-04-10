@@ -1,11 +1,11 @@
 "use client"
 
 import { useState } from "react"
-import { motion, AnimatePresence } from "framer-motion"
+import { motion } from "framer-motion"
 import { GithubIcon, LinkedinIcon, MailIcon, SendHorizontal } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { toast } from "sonner"
-import { FaXTwitter } from "react-icons/fa6"; 
+import { FaXTwitter } from "react-icons/fa6"
 
 const socialLinks = [
   { icon: FaXTwitter, href: "https://x.com/that_textrovert", label: "X" },
@@ -27,7 +27,6 @@ export default function ContactSection({ theme }: { theme: "retro" | "sunset" })
     email: "",
     message: "",
   })
-  const [focusedField, setFocusedField] = useState<keyof FormValues | null>(null)
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target
@@ -63,7 +62,7 @@ export default function ContactSection({ theme }: { theme: "retro" | "sunset" })
   const isRetro = theme === "retro"
 
   return (
-    <div className="min-h-screen flex items-center justify-center p-4 overflow-hidden">
+    <div className="min-h-screen flex items-center justify-center p-4">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -71,17 +70,17 @@ export default function ContactSection({ theme }: { theme: "retro" | "sunset" })
         className="w-full max-w-4xl mx-auto"
       >
         <div
-          className={`grid md:grid-cols-2 gap-8 p-6 md:p-8 rounded-2xl ${
+          className={`grid md:grid-cols-2 gap-5 p-4 md:p-6 rounded-2xl ${
             isRetro ? "bg-gray-900 border border-green-500/20" : "bg-gray-900 border border-orange-500/20"
           }`}
         >
           {/* Left side - Contact Info */}
-          <div className="space-y-6">
+          <div className="space-y-4">
             <motion.h2
               initial={{ opacity: 0, y: -20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.1 }}
-              className={`text-3xl md:text-4xl font-bold mb-4 ${
+              className={`text-2xl sm:text-3xl font-bold ${
                 isRetro ? "text-green-400 font-mono" : "text-orange-400 font-serif"
               }`}
             >
@@ -91,15 +90,17 @@ export default function ContactSection({ theme }: { theme: "retro" | "sunset" })
               initial={{ opacity: 0, y: -20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.2 }}
-              className="text-gray-400 text-base md:text-lg"
+              className="text-gray-400 text-sm sm:text-base"
             >
               Send me a message here.
               <br />I will receive your message instantly via email.
             </motion.p>
 
-            <div className="space-y-4">
-              <p className={`text-lg font-semibold ${isRetro ? "text-green-400" : "text-orange-400"}`}>Find me on</p>
-              <div className="flex flex-wrap gap-4">
+            <div className="space-y-3">
+              <p className={`text-base font-medium ${isRetro ? "text-green-400" : "text-orange-400"}`}>
+                Find me on
+              </p>
+              <div className="flex flex-wrap gap-2">
                 {socialLinks.map((social, index) => (
                   <motion.a
                     key={social.label}
@@ -110,14 +111,14 @@ export default function ContactSection({ theme }: { theme: "retro" | "sunset" })
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 0.3, delay: index * 0.1 }}
                     whileHover={{ scale: 1.05 }}
-                    className={`p-3 rounded-xl border ${
+                    className={`p-2 rounded-lg border ${
                       isRetro
                         ? "bg-gray-800 border-green-500/20 hover:border-green-500/40"
                         : "bg-gray-800 border-orange-500/20 hover:border-orange-500/40"
                     }`}
                   >
                     <social.icon
-                      className={`w-5 h-5 ${isRetro ? "text-green-400" : "text-orange-400"}`}
+                      className={`w-4 h-4 sm:w-5 sm:h-5 ${isRetro ? "text-green-400" : "text-orange-400"}`}
                       aria-label={social.label}
                     />
                   </motion.a>
@@ -127,7 +128,7 @@ export default function ContactSection({ theme }: { theme: "retro" | "sunset" })
           </div>
 
           {/* Right side - Contact Form */}
-          <div>
+          <div className="md:pl-4">
             <form onSubmit={handleSubmit} className="space-y-4">
               {(Object.keys(formValues) as Array<keyof FormValues>).map((field, index) => (
                 <motion.div
@@ -135,30 +136,23 @@ export default function ContactSection({ theme }: { theme: "retro" | "sunset" })
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5, delay: index * 0.1 }}
-                  className="relative"
+                  className="space-y-1"
                 >
-                  <AnimatePresence>
-                    {(focusedField === field || formValues[field]) && (
-                      <motion.label
-                        initial={{ opacity: 0, y: 10 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        exit={{ opacity: 0, y: 10 }}
-                        className={`absolute -top-6 left-2 text-sm ${isRetro ? "text-green-400" : "text-orange-400"}`}
-                      >
-                        {field.charAt(0).toUpperCase() + field.slice(1)}
-                      </motion.label>
-                    )}
-                  </AnimatePresence>
+                  <label
+                    className={`block text-sm font-medium ${
+                      isRetro ? "text-green-400" : "text-orange-400"
+                    }`}
+                  >
+                    {field.charAt(0).toUpperCase() + field.slice(1)}
+                  </label>
                   {field === "message" ? (
                     <textarea
                       name={field}
                       value={formValues[field]}
                       onChange={handleChange}
-                      onFocus={() => setFocusedField(field)}
-                      onBlur={() => setFocusedField(null)}
                       rows={4}
                       placeholder={`Your ${field}`}
-                      className={`w-full p-3 rounded-xl border bg-gray-800 placeholder-gray-500 ${
+                      className={`w-full p-2 rounded-lg border bg-gray-800 placeholder-gray-500 text-sm ${
                         isRetro
                           ? "border-green-500/20 focus:border-green-500/40 font-mono"
                           : "border-orange-500/20 focus:border-orange-500/40 font-sans"
@@ -170,10 +164,8 @@ export default function ContactSection({ theme }: { theme: "retro" | "sunset" })
                       name={field}
                       value={formValues[field]}
                       onChange={handleChange}
-                      onFocus={() => setFocusedField(field)}
-                      onBlur={() => setFocusedField(null)}
                       placeholder={`Your ${field}`}
-                      className={`w-full p-3 rounded-xl border bg-gray-800 placeholder-gray-500 ${
+                      className={`w-full p-2 rounded-lg border bg-gray-800 placeholder-gray-500 text-sm ${
                         isRetro
                           ? "border-green-500/20 focus:border-green-500/40 font-mono"
                           : "border-orange-500/20 focus:border-orange-500/40 font-sans"
@@ -187,7 +179,7 @@ export default function ContactSection({ theme }: { theme: "retro" | "sunset" })
                 <Button
                   type="submit"
                   disabled={isLoading}
-                  className={`w-full p-3 rounded-xl text-base md:text-lg font-semibold transition-all duration-300 ${
+                  className={`w-full p-2 rounded-lg text-sm font-medium transition-all duration-300 ${
                     isRetro
                       ? "bg-green-500 hover:bg-green-600 text-gray-900 font-mono"
                       : "bg-gradient-to-r from-orange-500 to-pink-500 hover:from-orange-600 hover:to-pink-600 text-white font-sans"
@@ -195,7 +187,7 @@ export default function ContactSection({ theme }: { theme: "retro" | "sunset" })
                 >
                   <span className="flex items-center justify-center gap-2">
                     {isLoading ? "Sending..." : "Send Message"}
-                    <SendHorizontal className="w-5 h-5" />
+                    <SendHorizontal className="w-4 h-4" />
                   </span>
                 </Button>
               </motion.div>
