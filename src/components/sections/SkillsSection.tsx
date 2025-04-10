@@ -1,6 +1,5 @@
 "use client"
 
-import { motion } from "framer-motion"
 import { skills } from "@/lib/data"
 import { techLogos } from "@/lib/tech-logos"
 import { IconType } from "react-icons"
@@ -24,32 +23,24 @@ export default function SkillsSection({ theme }: { theme: "retro" | "sunset" }) 
   return (
     <section className="py-16 px-4">
       <div className="max-w-7xl mx-auto">
-        <motion.h2 
+        <h2 
           className={`text-3xl font-bold mb-12 text-center ${
             theme === "retro" 
               ? "text-green-400 font-mono" 
               : "text-orange-400 font-sans"
           }`}
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
         >
           Skills
-        </motion.h2>
+        </h2>
 
         <div className="space-y-12">
           {Object.entries(categoryIcons).map(([category, Icon]) => {
             const categorySkills = skills.filter(skill => skill.category === category)
             
             return (
-              <motion.div
+              <div
                 key={category}
                 className="space-y-6"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5 }}
               >
                 <div className="flex items-center gap-3">
                   <div className={`p-3 rounded-lg bg-gradient-to-br ${gradientColor}`}>
@@ -64,16 +55,9 @@ export default function SkillsSection({ theme }: { theme: "retro" | "sunset" }) 
                   {categorySkills.map((skill) => {
                     const TechIcon: IconType = techLogos[skill.name] || (() => null)
                     return (
-                      <motion.div
+                      <div
                         key={skill.name}
-                        className={`flex items-center justify-center p-3 rounded-lg bg-gray-800 ${hoverBgColor} transition-all duration-300 border ${borderColor} min-h-[80px]`}
-                        whileHover={{ 
-                          scale: 1.05, 
-                          boxShadow: theme === "retro" 
-                            ? "0 0 20px rgba(74, 222, 128, 0.2)" 
-                            : "0 0 20px rgba(251, 146, 60, 0.2)"
-                        }}
-                        whileTap={{ scale: 0.95 }}
+                        className={`flex items-center justify-center p-3 rounded-lg bg-gray-800 ${hoverBgColor} transition-all duration-300 border ${borderColor} min-h-[80px] hover:scale-105`}
                       >
                         <div className="flex flex-col items-center justify-center gap-2">
                           <div className="flex items-center justify-center w-8 h-8">
@@ -83,11 +67,11 @@ export default function SkillsSection({ theme }: { theme: "retro" | "sunset" }) 
                             {skill.name}
                           </span>
                         </div>
-                      </motion.div>
+                      </div>
                     )
                   })}
                 </div>
-              </motion.div>
+              </div>
             )
           })}
         </div>

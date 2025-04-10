@@ -6,9 +6,11 @@ import { Code, Coffee, Sparkles, Briefcase } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
 import { FaGithub, FaLinkedin, FaXTwitter } from "react-icons/fa6"
+import { type Section } from "@/lib/types"
+import { type Dispatch, type SetStateAction } from "react"
 
 interface IntroProps {
-  setActiveSection: (section: string) => void
+  setActiveSection: Dispatch<SetStateAction<Section>>
   theme?: "retro" | "sunset"
 }
 
@@ -17,10 +19,20 @@ export default function IntroSection({ setActiveSection, theme = "sunset" }: Int
     <section className="min-h-screen relative flex items-center">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-32">
         <div className="flex flex-col lg:flex-row justify-between items-center gap-12">
-          <div className="flex-1 space-y-8">
+          <motion.div 
+            initial={{ opacity: 0, x: -20 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5 }}
+            className="flex-1 space-y-8"
+          >
             {/* Name and Title */}
             <div className="space-y-4">
-              <h1 className="text-5xl md:text-6xl font-bold">
+              <motion.h1 
+                initial={{ opacity: 0, y: -20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.2 }}
+                className="text-5xl md:text-6xl font-bold"
+              >
                 <span className={theme === "retro" ? "text-green-400" : "text-orange-400"}>Hey! </span>
                 <span className={theme === "retro" 
                   ? "text-green-400"
@@ -28,23 +40,33 @@ export default function IntroSection({ setActiveSection, theme = "sunset" }: Int
                 }>
                   I&apos;m Sonam Kumari
                 </span>
-              </h1>
+              </motion.h1>
               
               {/* Frontend Developer Tag */}
-              <div className={`inline-flex items-center px-4 py-2 rounded-full ${
-                theme === "retro"
-                  ? "bg-green-400/10 border border-green-400/20"
-                  : "bg-orange-400/10 border border-orange-400/20"
-              }`}>
+              <motion.div 
+                initial={{ opacity: 0, scale: 0.9 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.5, delay: 0.4 }}
+                className={`inline-flex items-center px-4 py-2 rounded-full ${
+                  theme === "retro"
+                    ? "bg-green-400/10 border border-green-400/20"
+                    : "bg-orange-400/10 border border-orange-400/20"
+                }`}
+              >
                 <Code className={`w-4 h-4 mr-2 ${theme === "retro" ? "text-green-400" : "text-orange-400"}`} />
                 <span className={`text-sm font-medium ${theme === "retro" ? "text-green-400" : "text-orange-400"}`}>
                   Frontend Developer
                 </span>
-              </div>
+              </motion.div>
             </div>
 
             {/* Description Points */}
-            <div className="space-y-4 text-gray-300">
+            <motion.div 
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.6 }}
+              className="space-y-4 text-gray-300"
+            >
               <div className="flex items-start space-x-3">
                 <Sparkles className={`w-6 h-6 mt-1 flex-shrink-0 ${theme === "retro" ? "text-green-400" : "text-orange-400"}`} />
                 <p className="text-lg">
@@ -65,10 +87,15 @@ export default function IntroSection({ setActiveSection, theme = "sunset" }: Int
                   Beyond coding, I enjoy exploring new technologies and collaborating on meaningful projects.
                 </p>
               </div>
-            </div>
+            </motion.div>
 
             {/* Social Links */}
-            <div className="flex items-center gap-6">
+            <motion.div 
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.8 }}
+              className="flex items-center gap-6"
+            >
               <Link 
                 href="https://x.com/that_textrovert" 
                 target="_blank"
@@ -102,11 +129,43 @@ export default function IntroSection({ setActiveSection, theme = "sunset" }: Int
               >
                 <FaGithub size={20} />
               </Link>
-            </div>
-          </div>
+            </motion.div>
 
-          {/* Profile Image */}
-          <div className="relative hidden lg:flex flex-col items-center gap-6">
+            {/* Mobile Hire Me Button */}
+            <motion.div 
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 1 }}
+              className="block lg:hidden flex justify-center"
+            >
+              <Button 
+                className={`w-full max-w-[250px] py-3 rounded-full transition-all duration-500 group relative overflow-hidden ${
+                  theme === "retro"
+                    ? "bg-transparent text-green-400 border-2 border-green-400 hover:text-black font-mono text-sm"
+                    : "bg-transparent text-orange-400 border-2 border-orange-400 hover:text-white font-sans"
+                }`}
+                onClick={() => setActiveSection("contact")}
+              >
+                <span className={`absolute inset-0 w-full h-full transition-all duration-500 opacity-0 group-hover:opacity-100 ${
+                  theme === "retro"
+                    ? "bg-gradient-to-r from-green-400 via-green-500 to-green-400"
+                    : "bg-gradient-to-r from-orange-400 via-pink-500 to-purple-500"
+                }`} />
+                <span className="relative flex items-center justify-center">
+                  <Briefcase className="mr-2 h-4 w-4" />
+                  Hire Me
+                </span>
+              </Button>
+            </motion.div>
+          </motion.div>
+
+          {/* Profile Image and Desktop Hire Me Button */}
+          <motion.div 
+            initial={{ opacity: 0, x: 20 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5, delay: 0.4 }}
+            className="relative hidden lg:flex flex-col items-center gap-6"
+          >
             <div className={`w-[300px] h-[300px] rounded-3xl overflow-hidden ${
               theme === 'retro' 
                 ? 'border-4 border-green-400 shadow-lg shadow-green-400/20' 
@@ -122,19 +181,26 @@ export default function IntroSection({ setActiveSection, theme = "sunset" }: Int
               />
             </div>
             
-            {/* Hire Me Button */}
+            {/* Desktop Hire Me Button */}
             <Button 
-              className={`w-full max-w-[250px] py-3 lg:py-4 rounded-full transition-all duration-300 hover:scale-105 ${
+              className={`w-full max-w-[250px] py-3 lg:py-4 rounded-full transition-all duration-500 group relative overflow-hidden ${
                 theme === "retro"
-                  ? "bg-transparent text-green-400 border-2 border-green-400 hover:bg-green-400 hover:text-black font-mono text-sm"
-                  : "bg-transparent text-orange-400 border-2 border-orange-400 hover:bg-orange-400 hover:text-black"
+                  ? "bg-transparent text-green-400 border-2 border-green-400 hover:text-black font-mono text-sm"
+                  : "bg-transparent text-orange-400 border-2 border-orange-400 hover:text-white font-sans"
               }`}
               onClick={() => setActiveSection("contact")}
             >
-              <Briefcase className="mr-2 h-4 w-4" />
-              Hire Me
+              <span className={`absolute inset-0 w-full h-full transition-all duration-500 opacity-0 group-hover:opacity-100 ${
+                theme === "retro"
+                  ? "bg-gradient-to-r from-green-400 via-green-500 to-green-400"
+                  : "bg-gradient-to-r from-orange-400 via-pink-500 to-purple-500"
+              }`} />
+              <span className="relative flex items-center justify-center">
+                <Briefcase className="mr-2 h-4 w-4" />
+                Hire Me
+              </span>
             </Button>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>

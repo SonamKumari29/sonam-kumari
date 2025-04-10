@@ -1,0 +1,1 @@
+export type Section = 'intro' | 'projects' | 'skills' | 'experience' | 'education' | 'contact' 

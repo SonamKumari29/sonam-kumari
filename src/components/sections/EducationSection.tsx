@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion"
 import { education } from "@/lib/data"
-import { GraduationCap, Calendar, ChevronRight } from "lucide-react"
+import { GraduationCap, Calendar } from "lucide-react"
 
 export default function EducationSection({ theme }: { theme: "retro" | "sunset" }) {
   const baseTextColor = theme === "retro" ? "text-green-400" : "text-orange-400"
