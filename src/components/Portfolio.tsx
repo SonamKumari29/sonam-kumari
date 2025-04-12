@@ -23,8 +23,18 @@ export default function Portfolio() {
       setMousePosition({ x: e.clientX, y: e.clientY })
     }
 
+    const handleTouchMove = (e: TouchEvent) => {
+      const touch = e.touches[0]
+      setMousePosition({ x: touch.clientX, y: touch.clientY })
+    }
+
     window.addEventListener('mousemove', handleMouseMove)
-    return () => window.removeEventListener('mousemove', handleMouseMove)
+    window.addEventListener('touchmove', handleTouchMove)
+    
+    return () => {
+      window.removeEventListener('mousemove', handleMouseMove)
+      window.removeEventListener('touchmove', handleTouchMove)
+    }
   }, [])
 
   return (
