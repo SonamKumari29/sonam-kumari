@@ -92,8 +92,8 @@ export default function ContactSection({ theme }: { theme: "retro" | "sunset" })
               transition={{ duration: 0.5, delay: 0.2 }}
               className="text-gray-400 text-sm sm:text-base"
             >
-              Send me a message here.
-              <br />I will receive your message instantly via email.
+              Feel free to get in touch for collaborations,<br /> queries, or opportunities.
+
             </motion.p>
 
             <div className="space-y-3">
