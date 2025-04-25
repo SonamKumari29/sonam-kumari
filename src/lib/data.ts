@@ -8,9 +8,18 @@ export const projects = [
     live: 'https://dishcovery-recipe-finder.netlify.app/',
     techStack: 'React.js + Vite, CSS, Font Awesome, Fetch API, TheMealDB API'
   },
+  {
+    id: 2, 
+    title: 'Devify', 
+    description: 'Devify is a community-focused blog platform for developers to explore trending topics, share knowledge, and stay connected. Built using modern technologies and UI libraries for a smooth user experience.', 
+    image: '/devify.png',  
+    github: 'https://github.com/SonamKumari29/Dishcovery-recipe-book', 
+    live: 'https://devify-ten.vercel.app/',
+    techStack: 'Next.js, React, TailwindCSS, Framer Motion,Shadcn UI, AceternityUI, MagicUI, Radix UI'
+  },
   
   {
-    "id": 2, 
+    "id": 3, 
     "title": "SolveDoku", 
     "description": "A web-based Sudoku solver that provides instant solutions using HTML, CSS, and JavaScript. It allows users to enter Sudoku puzzles, validates input, and solves them using backtracking.", 
     "image": "/solvedoku.png",  
@@ -19,7 +28,7 @@ export const projects = [
     "techStack": "HTML, CSS, JavaScript"
   },
   {
-    id: 3, 
+    id: 4, 
     title: 'StudyVerse', 
     description: 'An online meeting & study collaboration platform that enables users to schedule, join, and manage study sessions effortlessly. With real-time notifications, personalized study rooms, and seamless authentication, StudyVerse enhances virtual learning for students and educators alike.', 
     image: '/studyverse.png', 
