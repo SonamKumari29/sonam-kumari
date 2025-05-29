@@ -157,9 +157,9 @@ export const experiences = [
     id: 1,
     title: 'Frontend Developer (Freelance)',
     company: 'MCH Development',
-    period: 'Dec 2024 – Present',
+    period: 'Dec 2024 – May 2025',
     description: [
-      'Developed 10+ websites for e-commerce, healthcare, and branding, boosting engagement by 30%.',
+      'Developed 5+ websites for e-commerce, healthcare, and branding, boosting engagement by 30%.',
       'Optimized UI and reduced load times by 40%, increasing user retention by 20%.',
       'Built scalable apps with React.js, Next.js, and Tailwind CSS, ensuring 99.9% uptime.'
     ],
