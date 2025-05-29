@@ -155,7 +155,7 @@ export const experiences = [
   
   {
     id: 1,
-    title: 'Frontend Developer (Freelance)',
+    title: 'Frontend Developer',
     company: 'MCH Development',
     period: 'Dec 2024 – May 2025',
     description: [
