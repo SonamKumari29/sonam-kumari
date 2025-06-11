@@ -1,6 +1,6 @@
 import { projects } from "@/lib/data"
 import { AnimatePresence, motion } from "framer-motion"
-import { Terminal } from "lucide-react"
+import { Terminal, X } from "lucide-react"
 import { type Dispatch, type SetStateAction, useEffect, useRef, useState, useMemo } from "react"
 import type { Section } from "./Navigation"
 
@@ -180,7 +180,20 @@ export default function CLI({ theme, setActiveSection, setTheme, setCliMode }: C
           <Terminal className="w-5 h-5 mr-2" />
           <span className="font-bold">Portfolio CLI</span>
         </div>
-        <div className="text-xs">Press &apos;Tab&apos; to autocomplete</div>
+        <div className="flex items-center gap-4">
+          <div className="text-xs">Press &apos;Tab&apos; to autocomplete</div>
+          <button
+            onClick={() => setCliMode(false)}
+            className={`p-1 rounded-md transition-all duration-200 hover:bg-opacity-20 ${
+              theme === "retro" 
+                ? "hover:bg-green-500/20" 
+                : "hover:bg-orange-500/20"
+            }`}
+            aria-label="Close CLI"
+          >
+            <X className="w-4 h-4" />
+          </button>
+        </div>
       </div>
       <div ref={outputRef} className="flex-grow overflow-y-auto mb-4 custom-scrollbar" role="log" aria-live="polite">
         <AnimatePresence>
