@@ -1,12 +1,12 @@
 export const projects = [
   {
-    id: 1, 
-    title: 'Dishcovery', 
-    description: 'A modern recipe discovery platform built using React + Vite. It allows users to search for recipes, explore different meal categories, and get detailed cooking instructions using TheMealDB API.', 
-    image: '/dishcovery.png',  
-    github: 'https://github.com/SonamKumari29/Dishcovery-recipe-book', 
-    live: 'https://dishcovery-recipe-finder.netlify.app/',
-    techStack: 'React.js + Vite, CSS, Font Awesome, Fetch API, TheMealDB API'
+    id: 1,
+    title: 'AirQAlert',
+    description:'AirQAlert is a real-time air quality web app with AQI dashboard, pollutant breakdown, health tips, forecasts, and interactive map, built using Next.js 13, React 18, Tailwind CSS, Recharts, Leaflet, and OpenWeatherMap API.',
+    image: '/airqalert.png',
+    github: 'https://github.com/SonamKumari29/AirQAlert',
+    live: 'https://air-q-alert.vercel.app/',
+    techStack: 'Next.js 13, React 18, Tailwind CSS, Recharts, Leaflet, OpenWeatherMap API'
   },
   {
     id: 2, 
@@ -17,18 +17,26 @@ export const projects = [
     live: 'https://devify-ten.vercel.app/',
     techStack: 'Next.js, React, TailwindCSS, Framer Motion,Shadcn UI, AceternityUI, MagicUI, Radix UI'
   },
-  
   {
-    "id": 3, 
+    id: 3, 
+    title: 'Dishcovery', 
+    description: 'A modern recipe discovery platform built using React + Vite. It allows users to search for recipes, explore different meal categories, and get detailed cooking instructions using TheMealDB API.', 
+    image: '/dishcovery.png',  
+    github: 'https://github.com/SonamKumari29/Dishcovery-recipe-book', 
+    live: 'https://dishcovery-recipe-finder.netlify.app/',
+    techStack: 'React.js + Vite, CSS, Font Awesome, Fetch API, TheMealDB API'
+  },
+  {
+    id: 4, 
     "title": "SolveDoku", 
-    "description": "A web-based Sudoku solver that provides instant solutions using HTML, CSS, and JavaScript. It allows users to enter Sudoku puzzles, validates input, and solves them using backtracking.", 
+    "description": "A web-based Sudoku game using HTML, CSS, and JavaScript with smart hints, real-time validation, difficulty levels, and instant solving using backtracking.", 
     "image": "/solvedoku.png",  
     "github": "https://github.com/SonamKumari29/SolveDoku", 
     "live": "https://sonamkumari29.github.io/SolveDoku/",
     "techStack": "HTML, CSS, JavaScript"
   },
   {
-    id: 4, 
+    id: 5, 
     title: 'StudyVerse', 
     description: 'An online meeting & study collaboration platform that enables users to schedule, join, and manage study sessions effortlessly. With real-time notifications, personalized study rooms, and seamless authentication, StudyVerse enhances virtual learning for students and educators alike.', 
     image: '/studyverse.png', 
