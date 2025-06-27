@@ -160,9 +160,20 @@ export const skills = [
 
 
 export const experiences = [
-  
   {
     id: 1,
+    title: 'AI Intern',
+    company: 'Genpact',
+    period: 'June 2025 – Present',
+    description: [
+      'Enhancing enterprise chatbots using Kore.ai with NLP training and optimized dialog flows.',
+      'Integrating RESTful APIs via webhook nodes for real-time dynamic interactions.',
+      'Writing custom JavaScript to implement business logic and improve automation.'
+    ],
+  },
+  
+  {
+    id: 2,
     title: 'Frontend Developer',
     company: 'MCH Development',
     period: 'Dec 2024 – May 2025',
@@ -173,7 +184,7 @@ export const experiences = [
     ],
   },
   {
-    id: 2,
+    id: 3,
     title: 'Flutter & AI Intern',
     company: 'Mobile Development with AI @ IGDTUW',
     period: 'May 2024 - July 2024',
@@ -184,7 +195,7 @@ export const experiences = [
     ],
   },
   {
-    id: 3,
+    id: 4,
     title: 'Research Intern',
     company: 'Visual Computing with PyTorch @ IGDTUW',
     period: 'May 2023 - July 2023',
