@@ -13,7 +13,7 @@ export const projects = [
     title: 'Devify', 
     description: 'Devify is a community-focused blog platform for developers to explore trending topics, share knowledge, and stay connected. Built using modern technologies and UI libraries for a smooth user experience.', 
     image: '/devify.png',  
-    github: 'https://github.com/SonamKumari29/Dishcovery-recipe-book', 
+    github: 'https://github.com/SonamKumari29/devify', 
     live: 'https://devify-ten.vercel.app/',
     techStack: 'Next.js, React, TailwindCSS, Framer Motion,Shadcn UI, AceternityUI, MagicUI, Radix UI'
   },
@@ -160,9 +160,19 @@ export const skills = [
 
 
 export const experiences = [
-  
   {
     id: 1,
+    title: 'AI Intern',
+    company: 'Genpact',
+    period: 'June 2025 – Present',
+    description: [
+      'Enhancing enterprise chatbots using Kore.ai with NLP training and optimized dialog flows.',
+      'Integrating RESTful APIs via webhook nodes for real-time dynamic interactions.',
+      'Writing custom JavaScript to implement business logic and improve automation.'
+    ],
+  },
+  {
+    id: 2,
     title: 'Frontend Developer',
     company: 'MCH Development',
     period: 'Dec 2024 – May 2025',
@@ -170,17 +180,6 @@ export const experiences = [
       'Developed 5+ websites for e-commerce, healthcare, and branding, boosting engagement by 30%.',
       'Optimized UI and reduced load times by 40%, increasing user retention by 20%.',
       'Built scalable apps with React.js, Next.js, and Tailwind CSS, ensuring 99.9% uptime.'
-    ],
-  },
-  {
-    id: 2,
-    title: 'Flutter & AI Intern',
-    company: 'Mobile Development with AI @ IGDTUW',
-    period: 'May 2024 - July 2024',
-    description: [
-      'Built AI-powered mobile apps using Flutter, integrating real-time data processing.',
-      'Optimized UI/UX with animations & state management, improving performance by 35%.',
-      'Enhanced security with biometric authentication & secure API handling.'
     ],
   },
   {
