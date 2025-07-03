@@ -162,17 +162,28 @@ export const skills = [
 export const experiences = [
   {
     id: 1,
+    title: 'AI Intern',
+    company: 'Genpact',
+    period: 'June 2025 – Present',
+    description: [
+      'Enhancing enterprise chatbots using Kore.ai with NLP training and dialog optimization.',
+      'Integrating RESTful APIs via webhook nodes for real-time dynamic interactions.',
+      'Contributing to support and maintenance of a self-service Virtual Assistant and preparing catalogs which reduce development effort by 70%.'
+    ],
+  },
+  {
+    id: 2,
     title: 'Frontend Developer',
     company: 'MCH Development',
     period: 'Dec 2024 – May 2025',
     description: [
       'Developed 5+ websites for e-commerce, healthcare, and branding, boosting engagement by 30%.',
       'Optimized UI and reduced load times by 40%, increasing user retention by 20%.',
-      'Built scalable apps with React.js, Next.js, and Tailwind CSS, ensuring 99.9% uptime.'
+      'Built scalable web apps with React.js, Next.js, and Tailwind CSS, ensuring 99.9% uptime.'
     ],
   },
   {
-    id: 2,
+    id: 3,
     title: 'Flutter & AI Intern',
     company: 'Mobile Development with AI @ IGDTUW',
     period: 'May 2024 - July 2024',

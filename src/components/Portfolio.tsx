@@ -14,7 +14,7 @@ import CursorFollower from './CursorFollower'
 
 export default function Portfolio() {
   const [activeSection, setActiveSection] = useState<Section>('intro')
-  const [theme, setTheme] = useState<'retro' | 'sunset'>('sunset')
+  const [theme, setTheme] = useState<'retro' | 'sunset'>('retro')
   const [cliMode, setCliMode] = useState(false)
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 })
 

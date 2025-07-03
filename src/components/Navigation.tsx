@@ -47,10 +47,6 @@ export default function Navigation({
     return () => window.removeEventListener("scroll", handleScroll)
   }, [])
 
-  const toggleTheme = () => {
-    setTheme(theme === "retro" ? "sunset" : "retro")
-  }
-
   const toggleCliMode = () => {
     setCliMode(!cliMode)
     if (!cliMode) setActiveSection("intro")
@@ -76,7 +72,6 @@ export default function Navigation({
                 ? "bg-gray-700/60"
                 : "bg-gray-600/60"
           }`}
-          
         >
           <div className="px-4 sm:px-6 lg:px-8">
             <div className="flex items-center justify-between h-16">
@@ -93,7 +88,6 @@ export default function Navigation({
                     className="object-cover"
                   />
                 </div>
-                
               </div>
 
               {/* Desktop Navigation */}
@@ -120,26 +114,8 @@ export default function Navigation({
                 ))}
               </div>
 
-              {/* Theme and CLI Controls */}
+              {/* CLI Controls */}
               <div className="hidden md:flex items-center space-x-4">
-                <Tooltip>
-                  <TooltipTrigger asChild>
-                    <div className="flex items-center space-x-2">
-                      <span className={`text-sm ${theme === "retro" ? "text-green-400" : "text-orange-400"}`}>
-                        {theme === "retro" ? "Retro" : "Sunset"}
-                      </span>
-                      <Switch
-                        checked={theme === "sunset"}
-                        onCheckedChange={toggleTheme}
-                        className={`${theme === "retro" ? "bg-green-700" : "bg-orange-700"}`}
-                      />
-                    </div>
-                  </TooltipTrigger>
-                  <TooltipContent>
-                    <p>Toggle theme</p>
-                  </TooltipContent>
-                </Tooltip>
-
                 <Tooltip>
                   <TooltipTrigger asChild>
                     <div className="flex flex-col items-center">
@@ -222,18 +198,6 @@ export default function Navigation({
                   {item.title}
                 </button>
               ))}
-              <div className="px-3 py-2 border-t border-gray-700 mt-4">
-                <div className="flex items-center justify-between">
-                  <span className={`text-sm ${theme === "retro" ? "text-green-400" : "text-orange-400"}`}>
-                    {theme === "retro" ? "Retro" : "Sunset"} Theme
-                  </span>
-                  <Switch
-                    checked={theme === "sunset"}
-                    onCheckedChange={toggleTheme}
-                    className={`${theme === "retro" ? "bg-green-700" : "bg-orange-700"}`}
-                  />
-                </div>
-              </div>
             </div>
           </motion.div>
         </nav>
