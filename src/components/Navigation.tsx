@@ -5,7 +5,7 @@ import Image from "next/image"
 import { useEffect, useState } from "react"
 import { Menu, X, Terminal } from "lucide-react"
 import { Button } from "@/components/ui/button"
-import { Switch } from "@/components/ui/switch"
+
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip"
 
 export type Section = "intro" | "projects" | "skills" | "experience" | "education" | "contact"
@@ -32,7 +32,6 @@ export default function Navigation({
   activeSection,
   setActiveSection,
   theme,
-  setTheme,
   cliMode,
   setCliMode,
 }: NavigationProps) {

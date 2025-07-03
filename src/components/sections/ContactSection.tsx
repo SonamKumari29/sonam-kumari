@@ -92,7 +92,7 @@ export default function ContactSection({ theme }: { theme: "retro" | "sunset" })
               transition={{ duration: 0.5, delay: 0.2 }}
               className="text-gray-400 text-sm sm:text-base"
             >
-              I'm always interested in new opportunities, <br />whether it's a full-time position or freelance project. Don't hesitate to reach out!
+              I&apos;m always interested in new opportunities, <br />whether it&apos;s a full-time position or freelance project. Don&apos;t hesitate to reach out!
 
             </motion.p>
 
