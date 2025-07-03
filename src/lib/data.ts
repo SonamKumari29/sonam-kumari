@@ -179,7 +179,7 @@ export const experiences = [
     description: [
       'Built AI-powered mobile apps using Flutter, integrating real-time data processing.',
       'Optimized UI/UX with animations & state management, improving performance by 35%.',
-      'Enhanced security with biometric authentication & secure API handling.'
+      'Implemented secure authentication systems and API integration for enhanced app security.'
     ],
   },
   {
