@@ -60,7 +60,7 @@ export default function IntroSection({ setActiveSection, theme = "sunset" }: Int
                 )}
               </motion.h1>
               
-              {/* Frontend Developer Tag */}
+              {/*Tag */}
               <motion.div 
                 initial={{ opacity: 0, scale: 0.9 }}
                 animate={{ opacity: 1, scale: 1 }}
@@ -73,7 +73,7 @@ export default function IntroSection({ setActiveSection, theme = "sunset" }: Int
               >
                 <Code className={`w-4 h-4 mr-2 ${theme === "retro" ? "text-green-400" : "text-orange-400"}`} />
                 <span className={`text-sm font-medium ${theme === "retro" ? "text-green-400" : "text-orange-400"}`}>
-                  Frontend Developer
+                  AI & Full-Stack Developer
                 </span>
               </motion.div>
             </div>
@@ -102,7 +102,7 @@ export default function IntroSection({ setActiveSection, theme = "sunset" }: Int
                     ? "text-green-100"
                     : "text-orange-100"
                 }`}>
-                  I&apos;m a passionate developer who loves turning ideas into intuitive and impactful digital experiences.
+                  I&apos;m passionate about creating smart, user-friendly web experiences using AI, React.js, and Next.js.
                 </p>
               </div>
 
@@ -123,7 +123,7 @@ export default function IntroSection({ setActiveSection, theme = "sunset" }: Int
                     ? "text-green-100"
                     : "text-pink-100"
                 }`}>
-                  With a keen eye for design and a problem-solving mindset, I craft seamless, user-friendly interfaces.
+                  I love working on chatbots, NLP design, and integrating APIs to build dynamic, interactive apps.
                 </p>
               </div>
 
@@ -144,7 +144,7 @@ export default function IntroSection({ setActiveSection, theme = "sunset" }: Int
                     ? "text-green-100"
                     : "text-purple-100"
                 }`}>
-                  Beyond coding, I enjoy exploring new technologies and collaborating on meaningful projects.
+                  Always exploring new technologies, learning backend development, and collaborating on meaningful projects.
                 </p>
               </div>
             </motion.div>
