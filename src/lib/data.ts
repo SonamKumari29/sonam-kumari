@@ -166,9 +166,9 @@ export const experiences = [
     company: 'Genpact',
     period: 'June 2025 – Present',
     description: [
-      'Enhancing enterprise chatbots using Kore.ai with NLP training and dialog optimization.',
-      'Integrating RESTful APIs via webhook nodes for real-time dynamic interactions.',
-      'Contributing to support and maintenance of a self-service Virtual Assistant and preparing catalogs which reduce development effort by 70%.'
+      'Worked on Project – Kore.ai Functional Bots Enhancement, optimizing dialog flows and integrating RESTful APIs for dynamic chatbot interactions.',
+      'Contributed to the support and maintenance of a self-service Virtual Assistant and prepared catalogs that reduced development effort by 70%.',
+      'Implemented automation scripts in Copado to streamline processes and improve workflow efficiency.'
     ],
   },
   {
