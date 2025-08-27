@@ -102,7 +102,7 @@ export default function IntroSection({ setActiveSection, theme = "sunset" }: Int
                     ? "text-green-100"
                     : "text-orange-100"
                 }`}>
-                  I&apos;m passionate about creating smart, user-friendly web experiences using AI, React.js, and Next.js.
+                  Building smart web apps with AI, React.js, Next.js, and full-stack development.
                 </p>
               </div>
 
@@ -123,7 +123,7 @@ export default function IntroSection({ setActiveSection, theme = "sunset" }: Int
                     ? "text-green-100"
                     : "text-pink-100"
                 }`}>
-                  I love working on chatbots, NLP design, and integrating APIs to build dynamic, interactive apps.
+                 Active in open-source contributions and mentorships, experienced in conversational AI, NLP, and API integrations.
                 </p>
               </div>
 
@@ -144,7 +144,7 @@ export default function IntroSection({ setActiveSection, theme = "sunset" }: Int
                     ? "text-green-100"
                     : "text-purple-100"
                 }`}>
-                  Always exploring new technologies, learning backend development, and collaborating on meaningful projects.
+                  Exploring new technologies, backend development, and impactful collaborations.
                 </p>
               </div>
             </motion.div>
