@@ -164,7 +164,7 @@ export const experiences = [
     id: 1,
     title: 'AI Intern',
     company: 'Genpact',
-    period: 'June 2025 – Present',
+    period: 'June 2025 – Aug 2025',
     description: [
       'Worked on Project – Kore.ai Functional Bots Enhancement, optimizing dialog flows and integrating RESTful APIs for enterprise chatbots.',
       'Maintained a self-service Virtual Assistant and prepared catalogs, cutting development effort by 70%.',
