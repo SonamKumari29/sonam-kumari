@@ -73,7 +73,7 @@ export default function IntroSection({ setActiveSection, theme = "sunset" }: Int
               >
                 <Code className={`w-4 h-4 mr-2 ${theme === "retro" ? "text-green-400" : "text-orange-400"}`} />
                 <span className={`text-sm font-medium ${theme === "retro" ? "text-green-400" : "text-orange-400"}`}>
-                  AI & Full-Stack Developer
+                  AI & Web Developer
                 </span>
               </motion.div>
             </div>
