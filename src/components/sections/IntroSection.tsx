@@ -102,7 +102,7 @@ export default function IntroSection({ setActiveSection, theme = "sunset" }: Int
                     ? "text-green-100"
                     : "text-orange-100"
                 }`}>
-                  Building smart web apps with AI, React.js, Next.js, and full-stack development.
+                  Learning backend fundamentals while exploring AI.
                 </p>
               </div>
 
@@ -123,7 +123,8 @@ export default function IntroSection({ setActiveSection, theme = "sunset" }: Int
                     ? "text-green-100"
                     : "text-pink-100"
                 }`}>
-                 Active in open-source contributions and mentorships, experienced in conversational AI, NLP, and API integrations.
+                 Active in open source, mentoring, and sharing learnings through concise Medium blogs.
+
                 </p>
               </div>
 
@@ -144,7 +145,7 @@ export default function IntroSection({ setActiveSection, theme = "sunset" }: Int
                     ? "text-green-100"
                     : "text-purple-100"
                 }`}>
-                  Exploring new technologies, backend development, and impactful collaborations.
+                 Open to collaborate on React/Next.js builds or beginner-friendly backend + AI projects.
                 </p>
               </div>
             </motion.div>
