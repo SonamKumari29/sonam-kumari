@@ -61,18 +61,6 @@ export const skills = [
     description: 'Proficient in data analysis, machine learning, and web development. Experience with NumPy, Pandas, and Flask.'
   },
   { 
-    name: 'HTML5', 
-    category: 'Languages',
-    proficiency: 95,
-    description: 'Expert in semantic HTML, accessibility standards, and modern web development practices.'
-  },
-  { 
-    name: 'CSS3', 
-    category: 'Languages',
-    proficiency: 90,
-    description: 'Advanced knowledge of CSS, including Flexbox, Grid, animations, and responsive design.'
-  },
-  { 
     name: 'JavaScript', 
     category: 'Languages',
     proficiency: 90,
@@ -84,37 +72,17 @@ export const skills = [
     proficiency: 85,
     description: 'Strong typing, interfaces, and type safety. Experience with complex type definitions.'
   },
-
-  // Tools & Technologies
   { 
-    name: 'Figma', 
-    category: 'Tools & Technologies',
-    proficiency: 80,
-    description: 'UI/UX design, prototyping, and collaboration. Experience with design systems and component libraries.'
+    name: 'HTML', 
+    category: 'Languages',
+    proficiency: 95,
+    description: 'Expert in semantic HTML, accessibility standards, and modern web development practices.'
   },
   { 
-    name: 'Git & GitHub', 
-    category: 'Tools & Technologies',
-    proficiency: 85,
-    description: 'Version control, branching strategies, and collaborative development workflows.'
-  },
-  { 
-    name: 'Google Colab', 
-    category: 'Tools & Technologies',
-    proficiency: 75,
-    description: 'Data analysis, machine learning experiments, and collaborative coding environment.'
-  },
-  { 
-    name: 'MySQL', 
-    category: 'Tools & Technologies',
-    proficiency: 80,
-    description: 'Database design, query optimization, and data modeling.'
-  },
-  { 
-    name: 'Firebase', 
-    category: 'Tools & Technologies',
-    proficiency: 75,
-    description: 'Real-time database, authentication, and cloud functions.'
+    name: 'CSS', 
+    category: 'Languages',
+    proficiency: 90,
+    description: 'Advanced knowledge of CSS, including Flexbox, Grid, animations, and responsive design.'
   },
 
   // Libraries & Frameworks
@@ -131,12 +99,6 @@ export const skills = [
     description: 'Server-side rendering, API routes, and full-stack development.'
   },
   { 
-    name: 'Node.js', 
-    category: 'Libraries & Frameworks',
-    proficiency: 80,
-    description: 'Backend development, REST APIs, and server-side JavaScript.'
-  },
-  { 
     name: 'Tailwind CSS', 
     category: 'Libraries & Frameworks',
     proficiency: 90,
@@ -149,12 +111,62 @@ export const skills = [
     description: 'Responsive grid system, components, and customization.'
   },
 
-  // Real-time & Streaming
+  // Databases
   { 
-    name: 'Socket.io', 
-    category: 'Real-time & Streaming',
+    name: 'MySQL', 
+    category: 'Databases',
+    proficiency: 80,
+    description: 'Database design, query optimization, and data modeling.'
+  },
+  { 
+    name: 'Firebase', 
+    category: 'Databases',
     proficiency: 75,
-    description: 'Real-time bidirectional communication, event handling, and room management.'
+    description: 'Real-time database, authentication, and cloud functions.'
+  },
+  { 
+    name: 'MongoDB', 
+    category: 'Databases',
+    proficiency: 75,
+    description: 'NoSQL database, document storage, and modern data management.'
+  },
+
+  // Tools & Technologies
+  { 
+    name: 'Git', 
+    category: 'Tools & Technologies',
+    proficiency: 85,
+    description: 'Version control, branching strategies, and collaborative development workflows.'
+  },
+  { 
+    name: 'GitHub', 
+    category: 'Tools & Technologies',
+    proficiency: 85,
+    description: 'Code hosting, collaboration, and project management platform.'
+  },
+  { 
+    name: 'Figma', 
+    category: 'Tools & Technologies',
+    proficiency: 80,
+    description: 'UI/UX design, prototyping, and collaboration. Experience with design systems and component libraries.'
+  },
+  { 
+    name: 'Postman', 
+    category: 'Tools & Technologies',
+    proficiency: 80,
+    description: 'API testing, documentation, and development workflow optimization.'
+  },
+  { 
+    name: 'Copado', 
+    category: 'Tools & Technologies',
+    proficiency: 75,
+    description: 'DevOps platform for Salesforce deployment and release management.'
+  },
+  { 
+    name: 'Kore.ai', 
+    category: 'Tools & Technologies',
+    proficiency: 85,
+    description: 'Conversational AI platform for building and deploying intelligent chatbots and virtual assistants.'
   }
 ];
 
@@ -166,9 +178,9 @@ export const experiences = [
     company: 'Genpact',
     period: 'June 2025 – Aug 2025',
     description: [
-      'Worked on "Project – Kore.ai Functional Bots Enhancement" : optimized dialog flows and integrated RESTful APIs for enterprise chatbots.',
-      'Maintained a self-service Virtual Assistant and prepared catalogs, cutting development effort by 70%.',
-      'Automated chatbot monitoring and catalog testing with Copado Robotic Testing, boosting efficiency.'
+      'Project: Kore.ai Functional Bots Enhancement Optimized dialog flows and entity recognition to improve virtual assistant responses.',
+      'Automated chatbot testing with Copado and collaborated with teams to align features with business needs.',
+      
     ],
   },
   {
@@ -177,32 +189,20 @@ export const experiences = [
     company: 'MCH Development',
     period: 'Dec 2024 – May 2025',
     description: [
-      'Developed 5+ websites for e-commerce, healthcare, and branding, boosting engagement by 30%.',
-      'Optimized UI and reduced load times by 40%, increasing user retention by 20%.',
-      'Built scalable web apps with React.js, Next.js, and Tailwind CSS, ensuring 99.9% uptime.'
+      'Developed and deployed 5+ responsive websites across e-commerce, healthcare, and personal branding, enhancing user experience and engagement.',
+      'Built scalable, maintainable web apps with React.js, Next.js, and Tailwind CSS and collaborated with backend teams to ensure seamless performance.'
     ],
   },
+  
   {
     id: 3,
-    title: 'Flutter & AI Intern',
-    company: 'Mobile Development with AI @ IGDTUW',
-    period: 'May 2024 - July 2024',
-    description: [
-      'Built AI-powered mobile apps using Flutter, integrating real-time data processing.',
-      'Optimized UI/UX with animations & state management, improving performance by 35%.',
-      'Implemented secure authentication systems and API integration for enhanced app security.'
-    ],
-  },
-  {
-    id: 4,
     title: 'Research Intern',
     company: 'Visual Computing with PyTorch @ IGDTUW',
     period: 'May 2023 - July 2023',
     description: [
-      'Completed a 6-week Summer Internship on Visual Computing with PyTorch at IGDTUW.',
-      'Developed an image classification model with 92% accuracy, surpassing baseline by 15%.',
-      'Implemented object detection and segmentation using ANN CNN, reducing false positives by 20%.'
-    ],
+      'Developed a 3-layer CNN Model in PyTorch to classify Intel Scene dataset images into 6 categories, ensuring effective feature extraction & classification accuracy.',
+      'Built a complete pipeline with data preprocessing (augmentation, normalization), GPU-based training & validation—achieving 75% test accuracy on unseen data, demonstrating strong generalization.'
+    ]
   }
 ];
 
@@ -218,4 +218,20 @@ export const education = [
 ]
 
 export const blogs = [
-]
+  {
+    id: 1,
+    title: 'The Future of Artificial Intelligence: Smaller, Smarter, and Safer',
+    description: 'A crisp look at AI’s near future—generative AI gets practical, micro LLMs run on‑device, neuromorphic chips save power, and privacy‑by‑design builds trust.',
+    image: '/futureOfAI.png',
+    url: 'https://medium.com/@kumarisonam2909/the-future-of-artificial-intelligence-smaller-smarter-and-safer-9e1ee7eb38ec',
+    tags: ['Artificial Intelligence', 'Micro Llms', 'Generative Ai Use Cases', 'Future Of Ai', 'Neuromorphic Computing']
+  },
+  {
+    id: 2,
+    title: 'What is Kore.ai Bots? Complete Beginner\'s Guide with Features, Flow, and Use Cases',
+    description: 'A beginner-friendly guide to Kore.ai bots, covering features, workflows, and practical use cases.',
+    image: '/koreai.png',
+    url: 'https://medium.com/@kumarisonam2909/what-is-kore-ai-bots-complete-beginners-guide-with-features-flow-and-use-cases-6c9a98f689fb',
+    tags: ['Koreai', 'Chatbots', 'NLP', 'Conversational AI', 'No Code Automation']
+  }
+];

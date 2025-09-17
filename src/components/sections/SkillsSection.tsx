@@ -3,13 +3,13 @@
 import { skills } from "@/lib/data"
 import { techLogos } from "@/lib/tech-logos"
 import { IconType } from "react-icons"
-import { Code, Database, Cpu, Wifi } from "lucide-react"
+import { Code, Database, Cpu, Wifi, Server } from "lucide-react"
 
 const categoryIcons = {
   "Languages": Code,
-  "Tools & Technologies": Cpu,
   "Libraries & Frameworks": Database,
-  "Real-time & Streaming": Wifi
+  "Databases": Server,
+  "Tools & Technologies": Cpu,
 }
 
 export default function SkillsSection({ theme }: { theme: "retro" | "sunset" }) {

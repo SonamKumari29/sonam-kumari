@@ -30,6 +30,7 @@ export default function CLI({ theme, setActiveSection, setTheme, setCliMode }: C
     "help",
     "intro",
     "projects",
+    "blogs",
     "skills",
     "experience",
     "education",
@@ -92,6 +93,7 @@ export default function CLI({ theme, setActiveSection, setTheme, setCliMode }: C
         break
       case "intro":
       case "projects":
+      case "blogs":
       case "experience":
       case "education":
       case "skills":

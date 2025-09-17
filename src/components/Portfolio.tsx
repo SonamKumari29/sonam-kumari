@@ -5,6 +5,7 @@ import { AnimatePresence, motion } from 'framer-motion'
 import CLI from './CLI'
 import IntroSection from './sections/IntroSection'
 import ProjectsSection from './sections/ProjectsSection'
+import BlogsSection from './sections/BlogsSection'
 import SkillsSection from './sections/SkillsSection'
 import ExperienceSection from './sections/ExperienceSection'
 import EducationSection from './sections/EducationSection'
@@ -71,6 +72,7 @@ export default function Portfolio() {
                 <div className="w-full">
                   {activeSection === 'intro' && <IntroSection theme={theme} setActiveSection={setActiveSection} />}
                   {activeSection === 'projects' && <ProjectsSection theme={theme} />}
+                  {activeSection === 'blogs' && <BlogsSection theme={theme} />}
                   {activeSection === 'skills' && <SkillsSection theme={theme} />}
                   {activeSection === 'experience' && <ExperienceSection theme={theme} />}
                   {activeSection === 'education' && <EducationSection theme={theme} />}

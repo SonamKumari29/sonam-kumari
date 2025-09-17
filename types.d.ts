@@ -31,4 +31,13 @@ export type Education = {
   description: string;
 } 
 
+export type Blog = {
+  id: number;
+  title: string;
+  description: string;
+  image: string;
+  url: string;
+  tags: string[];
+} 
+
 
