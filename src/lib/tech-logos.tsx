@@ -1,23 +1,11 @@
 import type { IconType } from "react-icons";
 import {
-    SiApachekafka,
-    SiDocker,
-    SiExpress,
-    SiGraphql,
     SiJavascript,
     SiMongodb,
     SiNextdotjs,
-    SiNodedotjs,
     SiOracle,
-    SiPostgresql,
-    SiPrisma,
     SiReact,
-    SiReactquery,
-    SiRedis,
-    SiRedux,
-    SiRust,
     SiTailwindcss,
-    SiTrpc,
     SiTypescript,
     SiFigma,
     SiFirebase,
@@ -25,13 +13,11 @@ import {
     SiBootstrap,
     SiHtml5,
     SiCss3,
-    SiGooglecolab,
-    SiSocketdotio,
     SiPostman,
 } from "react-icons/si";
 
 import { DiPython } from "react-icons/di";
-import { FaGitAlt, FaVideo, FaUserShield, FaShapes, FaRobot } from "react-icons/fa";
+import { FaGitAlt, FaRobot } from "react-icons/fa";
 
 // Updated techLogos based on your main skills
 export const techLogos: Record<string, IconType> = {

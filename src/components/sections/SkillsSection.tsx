@@ -3,7 +3,7 @@
 import { skills } from "@/lib/data"
 import { techLogos } from "@/lib/tech-logos"
 import { IconType } from "react-icons"
-import { Code, Database, Cpu, Wifi, Server } from "lucide-react"
+import { Code, Database, Cpu, Server } from "lucide-react"
 
 const categoryIcons = {
   "Languages": Code,
