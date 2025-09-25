@@ -2,7 +2,7 @@ export const projects = [
   {
     id: 1,
     title: 'AirQAlert',
-    description:'AirQAlert is a real-time air quality web app with AQI dashboard, pollutant breakdown, health tips, forecasts, and interactive map, built using Next.js 13, React 18, Tailwind CSS, Recharts, Leaflet, and OpenWeatherMap API.',
+    description:'AirQAlert is a real-time air quality web app with AQI dashboard, pollutant breakdown, health tips, forecasts, and interactive map.',
     image: '/airqalert.png',
     github: 'https://github.com/SonamKumari29/AirQAlert',
     live: 'https://air-q-alert.vercel.app/',
@@ -11,7 +11,7 @@ export const projects = [
   {
     id: 2, 
     title: 'Devify', 
-    description: 'Devify is a community-focused blog platform for developers to explore trending topics, share knowledge, and stay connected. Built using modern technologies and UI libraries for a smooth user experience.', 
+    description: 'Devify is a community-focused blog platform for developers to explore trending topics, share knowledge, and stay connected.', 
     image: '/devify.png',  
     github: 'https://github.com/SonamKumari29/devify', 
     live: 'https://devify-ten.vercel.app/',
@@ -20,7 +20,7 @@ export const projects = [
   {
     id: 3, 
     title: 'Dishcovery', 
-    description: 'A modern recipe discovery platform built using React + Vite. It allows users to search for recipes, explore different meal categories, and get detailed cooking instructions using TheMealDB API.', 
+    description: 'Dishcovery allows users to search for recipes, explore different meal categories, and get detailed cooking instructions using TheMealDB API.', 
     image: '/dishcovery.png',  
     github: 'https://github.com/SonamKumari29/Dishcovery-recipe-book', 
     live: 'https://dishcovery-recipe-finder.netlify.app/',
@@ -29,7 +29,7 @@ export const projects = [
   {
     id: 4, 
     "title": "SolveDoku", 
-    "description": "A web-based Sudoku game using HTML, CSS, and JavaScript with smart hints, real-time validation, difficulty levels, and instant solving using backtracking.", 
+    "description": "A web-based Sudoku game with smart hints, real-time validation, difficulty levels, and instant solving using backtracking.", 
     "image": "/solvedoku.png",  
     "github": "https://github.com/SonamKumari29/SolveDoku", 
     "live": "https://sonamkumari29.github.io/SolveDoku/",
@@ -38,7 +38,7 @@ export const projects = [
   {
     id: 5, 
     title: 'StudyVerse', 
-    description: 'An online meeting & study collaboration platform that enables users to schedule, join, and manage study sessions effortlessly. With real-time notifications, personalized study rooms, and seamless authentication, StudyVerse enhances virtual learning for students and educators alike.', 
+    description: 'A study collaboration platform with instant/scheduled meetings, custom layouts, participant panel, host controls, session history, and recording playback.', 
     image: '/studyverse.png', 
     github: 'https://github.com/SonamKumari29/studyverse', 
     live: 'https://studyverse2.vercel.app/',
