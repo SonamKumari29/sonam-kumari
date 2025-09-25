@@ -179,8 +179,7 @@ export const experiences = [
     period: 'June 2025 – Aug 2025',
     description: [
       'Project: Kore.ai Functional Bots Enhancement Optimized dialog flows and entity recognition to improve virtual assistant responses.',
-      'Automated chatbot testing with Copado and collaborated with teams to align features with business needs.',
-      
+      'Automated chatbot testing with Copado and collaborated with teams to align features with business needs.'
     ],
   },
   {
@@ -220,14 +219,22 @@ export const education = [
 export const blogs = [
   {
     id: 1,
+    title: 'Next-Gen Computing Paradigms: A Simple Guide to Thinking Beyond Buzzwords',
+    description: 'Explained complex tech like quantum, hybrid, and hyper-automation in easy, real-life ways.',
+    image: '/nextgencomputing.png',
+    url: 'https://medium.com/@kumarisonam2909/next-gen-computing-paradigms-a-simple-guide-to-thinking-beyond-buzzwords-6121746c441e',
+    tags: ['NextGenComputing', 'Quantum Computing', 'Hybrid Computing', 'Hyper Automation', 'Paradigms']
+  },
+  {
+    id: 2,
     title: 'The Future of Artificial Intelligence: Smaller, Smarter, and Safer',
-    description: 'A crisp look at AI’s near future—generative AI gets practical, micro LLMs run on‑device, neuromorphic chips save power, and privacy‑by‑design builds trust.',
+    description: 'A crisp look at AI\'s near future - generative AI gets practical, micro LLMs run on-device, neuromorphic chips save power, and privacy-by-design builds trust.',
     image: '/futureOfAI.png',
     url: 'https://medium.com/@kumarisonam2909/the-future-of-artificial-intelligence-smaller-smarter-and-safer-9e1ee7eb38ec',
     tags: ['Artificial Intelligence', 'Micro Llms', 'Generative Ai Use Cases', 'Future Of Ai', 'Neuromorphic Computing']
   },
   {
-    id: 2,
+    id: 3,
     title: 'What is Kore.ai Bots? Complete Beginner\'s Guide with Features, Flow, and Use Cases',
     description: 'A beginner-friendly guide to Kore.ai bots, covering features, workflows, and practical use cases.',
     image: '/koreai.png',
