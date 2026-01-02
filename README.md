@@ -1,6 +1,3 @@
-
-Welcome to my **developer portfolio**! This repository highlights my journey as a **frontend developer**, showcasing my projects, skills, and experience.
-
 ## 🚀 Live Demo
 Check out the live version: **[sonam-kumari](https://sonam-kumari.vercel.app/)**
 
