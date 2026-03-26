@@ -214,7 +214,7 @@ export default function IntroSection({ setActiveSection, theme = "sunset" }: Int
                 }`} />
                 <span className="relative flex items-center justify-center">
                   <Briefcase className="mr-2 h-3 w-3" />
-                  Hire Me
+                  Let's Connect
                 </span>
               </Button>
             </motion.div>
