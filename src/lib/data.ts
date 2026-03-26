@@ -2,45 +2,45 @@ export const projects = [
   {
     id: 1,
     title: 'AirQAlert',
-    description:'AirQAlert is a real-time air quality web app with AQI dashboard, pollutant breakdown, health tips, forecasts, and interactive map.',
+    description: 'AirQAlert is a real-time air quality web app with AQI dashboard, pollutant breakdown, health tips, forecasts, and interactive map.',
     image: '/airqalert.png',
     github: 'https://github.com/SonamKumari29/AirQAlert',
     live: 'https://air-q-alert.vercel.app/',
     techStack: 'Next.js 13, React 18, Tailwind CSS, Recharts, Leaflet, OpenWeatherMap API'
   },
   {
-    id: 2, 
-    title: 'Devify', 
-    description: 'Devify is a community-focused blog platform for developers to explore trending topics, share knowledge, and stay connected.', 
-    image: '/devify.png',  
-    github: 'https://github.com/SonamKumari29/devify', 
+    id: 2,
+    title: 'Devify',
+    description: 'Devify is a community-focused blog platform for developers to explore trending topics, share knowledge, and stay connected.',
+    image: '/devify.png',
+    github: 'https://github.com/SonamKumari29/devify',
     live: 'https://devify-ten.vercel.app/',
     techStack: 'Next.js, React, TailwindCSS, Framer Motion,Shadcn UI, AceternityUI, MagicUI, Radix UI'
   },
   {
-    id: 3, 
-    title: 'Dishcovery', 
-    description: 'Dishcovery allows users to search for recipes, explore different meal categories, and get detailed cooking instructions using TheMealDB API.', 
-    image: '/dishcovery.png',  
-    github: 'https://github.com/SonamKumari29/Dishcovery-recipe-book', 
+    id: 3,
+    title: 'Dishcovery',
+    description: 'Dishcovery allows users to search for recipes, explore different meal categories, and get detailed cooking instructions using TheMealDB API.',
+    image: '/dishcovery.png',
+    github: 'https://github.com/SonamKumari29/Dishcovery-recipe-book',
     live: 'https://dishcovery-recipe-finder.netlify.app/',
     techStack: 'React.js + Vite, CSS, Font Awesome, Fetch API, TheMealDB API'
   },
   {
-    id: 4, 
-    "title": "SolveDoku", 
-    "description": "A web-based Sudoku game with smart hints, real-time validation, difficulty levels, and instant solving using backtracking.", 
-    "image": "/solvedoku.png",  
-    "github": "https://github.com/SonamKumari29/SolveDoku", 
+    id: 4,
+    "title": "SolveDoku",
+    "description": "A web-based Sudoku game with smart hints, real-time validation, difficulty levels, and instant solving using backtracking.",
+    "image": "/solvedoku.png",
+    "github": "https://github.com/SonamKumari29/SolveDoku",
     "live": "https://sonamkumari29.github.io/SolveDoku/",
     "techStack": "HTML, CSS, JavaScript"
   },
   {
-    id: 5, 
-    title: 'StudyVerse', 
-    description: 'A study collaboration platform with instant/scheduled meetings, custom layouts, participant panel, host controls, session history, and recording playback.', 
-    image: '/studyverse.png', 
-    github: 'https://github.com/SonamKumari29/studyverse', 
+    id: 5,
+    title: 'StudyVerse',
+    description: 'A study collaboration platform with instant/scheduled meetings, custom layouts, participant panel, host controls, session history, and recording playback.',
+    image: '/studyverse.png',
+    github: 'https://github.com/SonamKumari29/studyverse',
     live: 'https://studyverse2.vercel.app/',
     techStack: 'Next.js 14, Tailwind CSS, Radix UI, Clerk Authentication, Stream Video SDK, React Hooks, React Datepicker'
   }
@@ -48,122 +48,122 @@ export const projects = [
 
 export const skills = [
   // Languages
-  { 
-    name: 'Java', 
+  {
+    name: 'Java',
     category: 'Languages',
     proficiency: 85,
     description: 'Strong understanding of OOP concepts, data structures, and algorithms. Experience with Spring Boot and enterprise applications.'
   },
-  { 
-    name: 'Python', 
+  {
+    name: 'Python',
     category: 'Languages',
     proficiency: 90,
     description: 'Proficient in data analysis, machine learning, and web development. Experience with NumPy, Pandas, and Flask.'
   },
-  { 
-    name: 'JavaScript', 
+  {
+    name: 'JavaScript',
     category: 'Languages',
     proficiency: 90,
     description: 'Deep understanding of ES6+, asynchronous programming, and modern JavaScript features.'
   },
-  { 
-    name: 'TypeScript', 
+  {
+    name: 'TypeScript',
     category: 'Languages',
     proficiency: 85,
     description: 'Strong typing, interfaces, and type safety. Experience with complex type definitions.'
   },
-  { 
-    name: 'HTML', 
+  {
+    name: 'HTML',
     category: 'Languages',
     proficiency: 95,
     description: 'Expert in semantic HTML, accessibility standards, and modern web development practices.'
   },
-  { 
-    name: 'CSS', 
+  {
+    name: 'CSS',
     category: 'Languages',
     proficiency: 90,
     description: 'Advanced knowledge of CSS, including Flexbox, Grid, animations, and responsive design.'
   },
 
   // Libraries & Frameworks
-  { 
-    name: 'React.js', 
+  {
+    name: 'React.js',
     category: 'Libraries & Frameworks',
     proficiency: 90,
     description: 'Component-based architecture, hooks, state management, and performance optimization.'
   },
-  { 
-    name: 'Next.js', 
+  {
+    name: 'Next.js',
     category: 'Libraries & Frameworks',
     proficiency: 85,
     description: 'Server-side rendering, API routes, and full-stack development.'
   },
-  { 
-    name: 'Tailwind CSS', 
+  {
+    name: 'Tailwind CSS',
     category: 'Libraries & Frameworks',
     proficiency: 90,
     description: 'Utility-first CSS, responsive design, and custom configurations.'
   },
-  { 
-    name: 'Bootstrap', 
+  {
+    name: 'Bootstrap',
     category: 'Libraries & Frameworks',
     proficiency: 85,
     description: 'Responsive grid system, components, and customization.'
   },
 
   // Databases
-  { 
-    name: 'MySQL', 
+  {
+    name: 'MySQL',
     category: 'Databases',
     proficiency: 80,
     description: 'Database design, query optimization, and data modeling.'
   },
-  { 
-    name: 'Firebase', 
+  {
+    name: 'Firebase',
     category: 'Databases',
     proficiency: 75,
     description: 'Real-time database, authentication, and cloud functions.'
   },
-  { 
-    name: 'MongoDB', 
+  {
+    name: 'MongoDB',
     category: 'Databases',
     proficiency: 75,
     description: 'NoSQL database, document storage, and modern data management.'
   },
 
   // Tools & Technologies
-  { 
-    name: 'Git', 
+  {
+    name: 'Git',
     category: 'Tools & Technologies',
     proficiency: 85,
     description: 'Version control, branching strategies, and collaborative development workflows.'
   },
-  { 
-    name: 'GitHub', 
+  {
+    name: 'GitHub',
     category: 'Tools & Technologies',
     proficiency: 85,
     description: 'Code hosting, collaboration, and project management platform.'
   },
-  { 
-    name: 'Figma', 
+  {
+    name: 'Figma',
     category: 'Tools & Technologies',
     proficiency: 80,
     description: 'UI/UX design, prototyping, and collaboration. Experience with design systems and component libraries.'
   },
-  { 
-    name: 'Postman', 
+  {
+    name: 'Postman',
     category: 'Tools & Technologies',
     proficiency: 80,
     description: 'API testing, documentation, and development workflow optimization.'
   },
-  { 
-    name: 'Copado', 
+  {
+    name: 'Copado',
     category: 'Tools & Technologies',
     proficiency: 75,
     description: 'DevOps platform for Salesforce deployment and release management.'
   },
-  { 
-    name: 'Kore.ai', 
+  {
+    name: 'Kore.ai',
     category: 'Tools & Technologies',
     proficiency: 85,
     description: 'Conversational AI platform for building and deploying intelligent chatbots and virtual assistants.'
@@ -185,14 +185,14 @@ export const experiences = [
   {
     id: 2,
     title: 'Frontend Developer',
-    company: 'MCH Development',
+    company: 'Freelance',
     period: 'Dec 2024 – May 2025',
     description: [
       'Developed and deployed 5+ responsive websites across e-commerce, healthcare, and personal branding, enhancing user experience and engagement.',
       'Built scalable, maintainable web apps with React.js, Next.js, and Tailwind CSS and collaborated with backend teams to ensure seamless performance.'
     ],
   },
-  
+
   {
     id: 3,
     title: 'Research Intern',
